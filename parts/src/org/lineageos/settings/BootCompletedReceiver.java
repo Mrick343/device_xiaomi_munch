@@ -26,6 +26,7 @@ import android.os.SystemProperties;
 import android.util.Log;
 import androidx.preference.PreferenceManager;
 
+import org.lineageos.settings.doze.PocketService;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
@@ -52,6 +53,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         RefreshUtils.startService(context);
         TouchSamplingUtils.restoreSamplingValue(context);
         FileUtils.enableService(context);
+
+        // Pocket
+        PocketService.startService(context);
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);

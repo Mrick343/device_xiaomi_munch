@@ -227,6 +227,12 @@
                 android:resource="@string/dc_dimming_enable_summary" />
         </activity>
 
+        <!-- Pocketservice service -->
+        <service
+            android:name=".doze.PocketService"
+            android:permission="PocketService">
+        </service>
+
     </application>
 
 </manifest>
