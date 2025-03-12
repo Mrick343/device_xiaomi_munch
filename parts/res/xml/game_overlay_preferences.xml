@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        android:key="game_overlay_enable"
+        android:title="@string/game_overlay_enable_title"
+        android:summary="@string/game_overlay_enable_summary"
+        android:defaultValue="false" />
+
+    <PreferenceCategory
+        android:title="@string/game_overlay_features_title"
+        android:dependency="game_overlay_enable">
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_fps_enable"
+            android:title="@string/game_overlay_fps_title"
+            android:summary="@string/game_overlay_fps_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_temp_enable"
+            android:title="@string/game_overlay_device_temp_title"
+            android:summary="@string/game_overlay_device_temp_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_cpu_usage_enable"
+            android:title="@string/game_overlay_cpu_usage_title"
+            android:summary="@string/game_overlay_cpu_usage_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_cpu_clock_enable"
+            android:title="@string/game_overlay_cpu_clock_title"
+            android:summary="@string/game_overlay_cpu_clock_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_cpu_temp_enable"
+            android:title="@string/game_overlay_cpu_temp_title"
+            android:summary="@string/game_overlay_cpu_temp_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_ram_enable"
+            android:title="@string/game_overlay_ram_usage_title"
+            android:summary="@string/game_overlay_ram_usage_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_gpu_usage_enable"
+            android:title="@string/game_overlay_gpu_usage_title"
+            android:summary="@string/game_overlay_gpu_usage_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_gpu_clock_enable"
+            android:title="@string/game_overlay_gpu_clock_title"
+            android:summary="@string/game_overlay_gpu_clock_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_gpu_temp_enable"
+            android:title="@string/game_overlay_gpu_temp_title"
+            android:summary="@string/game_overlay_gpu_temp_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/game_overlay_customization_title"
+        android:dependency="game_overlay_enable">
+
+        <SeekBarPreference
+            android:key="game_overlay_text_size"
+            android:title="@string/game_overlay_text_size_title"
+            android:summary="@string/game_overlay_text_size_summary"
+            android:defaultValue="14"
+            android:max="32"
+            android:min="12" />
+
+        <SeekBarPreference
+            android:key="game_overlay_background_alpha"
+            android:title="@string/game_overlay_background_alpha_title"
+            android:summary="@string/game_overlay_background_alpha_summary"
+            android:defaultValue="128"
+            android:max="255"
+            android:min="0" />
+
+        <SeekBarPreference
+            android:key="game_overlay_corner_radius"
+            android:title="@string/game_overlay_corner_radius_title"
+            android:summary="@string/game_overlay_corner_radius_summary"
+            android:defaultValue="90"
+            android:max="100"
+            android:min="0" />
+
+        <SeekBarPreference
+            android:key="game_overlay_padding"
+            android:title="@string/game_overlay_padding_title"
+            android:summary="@string/game_overlay_padding_summary"
+            android:defaultValue="8"
+            android:max="64"
+            android:min="0" />
+
+        <SeekBarPreference
+            android:key="game_overlay_item_spacing"
+            android:title="@string/game_overlay_item_spacing_title"
+            android:summary="@string/game_overlay_item_spacing_summary"
+            android:defaultValue="8"
+            android:max="50"
+            android:min="0" />
+
+        <ListPreference
+            android:key="game_overlay_update_interval"
+            android:title="@string/game_overlay_update_interval_title"
+            android:summary="@string/game_overlay_update_interval_summary"
+            android:defaultValue="1000"
+            android:entries="@array/game_overlay_update_interval_entries"
+            android:entryValues="@array/game_overlay_update_interval_values" />
+
+        <ListPreference
+            android:key="game_overlay_title_color"
+            android:title="@string/game_overlay_title_color_title"
+            android:summary="@string/game_overlay_title_color_summary"
+            android:defaultValue="#FFFFFF"
+            android:entries="@array/game_overlay_color_entries"
+            android:entryValues="@array/game_overlay_color_values" />
+
+        <ListPreference
+            android:key="game_overlay_value_color"
+            android:title="@string/game_overlay_value_color_title"
+            android:summary="@string/game_overlay_value_color_summary"
+            android:defaultValue="#4CAF50"
+            android:entries="@array/game_overlay_color_entries"
+            android:entryValues="@array/game_overlay_color_values" />
+
+        <ListPreference
+            android:key="game_overlay_position"
+            android:title="@string/game_overlay_position_title"
+            android:summary="@string/game_overlay_position_summary"
+            android:defaultValue="top_center"
+            android:entries="@array/game_overlay_position_entries"
+            android:entryValues="@array/game_overlay_position_values" />
+
+        <ListPreference
+            android:key="game_overlay_format"
+            android:title="@string/game_overlay_format_title"
+            android:summary="@string/game_overlay_format_summary"
+            android:defaultValue="full"
+            android:entries="@array/game_overlay_format_entries"
+            android:entryValues="@array/game_overlay_format_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/game_overlay_split_config_title"
+        android:dependency="game_overlay_enable">
+
+        <ListPreference
+            android:key="game_overlay_split_mode"
+            android:title="@string/game_overlay_split_mode_title"
+            android:summary="@string/game_overlay_split_mode_summary"
+            android:defaultValue="side_by_side"
+            android:entries="@array/game_overlay_split_mode_entries"
+            android:entryValues="@array/game_overlay_split_mode_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/game_overlay_gesture_controls_title"
+        android:dependency="game_overlay_enable">
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_single_tap_toggle"
+            android:title="@string/game_overlay_single_tap_toggle_title"
+            android:summary="@string/game_overlay_single_tap_toggle_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_doubletap_capture"
+            android:title="@string/game_overlay_double_tap_capture_title"
+            android:summary="@string/game_overlay_double_tap_capture_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_overlay_longpress_enable"
+            android:title="@string/game_overlay_long_press_enable_title"
+            android:summary="@string/game_overlay_long_press_enable_summary"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="game_overlay_longpress_timeout"
+            android:title="@string/game_overlay_long_press_timeout_title"
+            android:summary="@string/game_overlay_long_press_timeout_summary"
+            android:defaultValue="1000"
+            android:entries="@array/game_overlay_long_press_timeout_entries"
+            android:entryValues="@array/game_overlay_long_press_timeout_values"
+            android:dependency="game_overlay_longpress_enable" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/game_overlay_capture_title"
+        android:dependency="game_overlay_enable">
+
+        <Preference
+            android:key="game_overlay_capture_start"
+            android:title="@string/game_overlay_capture_start_title"
+            android:summary="@string/game_overlay_capture_start_summary" />
+
+        <Preference
+            android:key="game_overlay_capture_stop"
+            android:title="@string/game_overlay_capture_stop_title"
+            android:summary="@string/game_overlay_capture_stop_summary" />
+
+        <Preference
+            android:key="game_overlay_capture_export"
+            android:title="@string/game_overlay_capture_export_title"
+            android:summary="@string/game_overlay_capture_export_summary" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
