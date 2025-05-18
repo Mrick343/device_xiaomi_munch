@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2022 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+    <!-- GameBar Update Interval -->
+    <string-array name="game_overlay_update_interval_entries">
+        <item>Mỗi 500ms</item>
+        <item>Mỗi giây</item>
+        <item>Mỗi 2 giây</item>
+        <item>Mỗi 5 giây</item>
+    </string-array>
+    <string-array name="game_overlay_update_interval_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- GameBar Position -->
+    <string-array name="game_overlay_position_entries">
+        <item>Trên bên trái</item>
+        <item>Trên chính giữa</item>
+        <item>Trên bên phải</item>
+        <item>Dưới bên trái</item>
+        <item>Dưới chính giữa</item>
+        <item>Dưới bên phải</item>
+        <item>Kéo tự do</item>
+    </string-array>
+    <string-array name="game_overlay_position_values">
+        <item>top_left</item>
+        <item>top_center</item>
+        <item>top_right</item>
+        <item>bottom_left</item>
+        <item>bottom_center</item>
+        <item>bottom_right</item>
+        <item>draggable</item>
+    </string-array>
+
+    <!-- GameBar Colors -->
+    <string-array name="game_overlay_color_entries">
+        <item>Trắng</item>
+        <item>Đỏ thẫm</item>
+        <item>Salad trái cây</item>
+        <item>Xanh hoàng gia</item>
+        <item>Hổ phách</item>
+        <item>Lam đậm</item>
+        <item>Tím điện</item>
+        <item>Hồng</item>
+    </string-array>
+    <string-array name="game_overlay_color_values">
+        <item>#FFFFFF</item>
+        <item>#DC143C</item>
+        <item>#4CAF50</item>
+        <item>#4169E1</item>
+        <item>#FFBF00</item>
+        <item>#008080</item>
+        <item>#8A2BE2</item>
+        <item>#FF1493</item>
+    </string-array>
+
+    <!-- GameBar Format -->
+    <string-array name="game_overlay_format_entries">
+        <item>Đầy đủ</item>
+        <item>Tối giản</item>
+    </string-array>
+    <string-array name="game_overlay_format_values">
+        <item>full</item>
+        <item>minimal</item>
+    </string-array>
+
+    <!-- GameBar Split Mode -->
+    <string-array name="game_overlay_split_mode_entries">
+        <item>Cạnh nhau</item>
+        <item>Xếp chồng</item>
+    </string-array>
+    <string-array name="game_overlay_split_mode_values">
+        <item>side_by_side</item>
+        <item>stacked</item>
+    </string-array>
+
+    <!-- GameBar Long Press Timeout -->
+    <string-array name="game_overlay_long_press_timeout_entries">
+        <item>0.5 giây</item>
+        <item>1 giây</item>
+        <item>3 giây</item>
+        <item>5 giây</item>
+    </string-array>
+    <string-array name="game_overlay_long_press_timeout_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>3000</item>
+        <item>5000</item>
+    </string-array>
+</resources>

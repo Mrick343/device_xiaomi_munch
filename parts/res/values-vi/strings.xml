@@ -135,4 +135,101 @@
     <string name="dc_dimming_enable_title">Chống nhấp nháy</string>
     <string name="dc_dimming_enable_summary">Giảm mỏi mắt trong điều kiện ánh sáng yếu</string>
     <string name="dc_dimming_enable_summary_not_supported">Chức năng hiện không được hỗ trợ bởi kernel</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_overlay_title">GameBar</string>
+    <string name="game_overlay_summary">Bật lớp phủ hệ thống (FPS, nhiệt độ, v.v.)</string>
+    <string name="game_overlay_overlay_permission_required">Cần quyền lớp phủ</string>
+    <string name="game_overlay_overlay_permission_granted">Đã cấp quyền lớp phủ</string>
+    <string name="game_overlay_overlay_permission_denied">Đã từ chối quyền lớp phủ</string>
+    <string name="game_overlay_tile_label">GameBar</string>
+    <string name="game_overlay_tile_description">Bật/tắt lớp phủ khi chơi game</string>
+
+    <string name="game_overlay_enable_title">Bật lớp phủ GameBar</string>
+    <string name="game_overlay_enable_summary">Hiển thị lớp phủ với dữ liệu hiệu năng hệ thống khi chơi game</string>
+
+    <string name="game_overlay_features_title">Tính năng lớp phủ</string>
+    <string name="game_overlay_fps_title">Lớp phủ FPS</string>
+    <string name="game_overlay_fps_summary">Hiển thị FPS hiện tại trên màn hình</string>
+
+    <string name="game_overlay_device_temp_title">Nhiệt độ thiết bị</string>
+    <string name="game_overlay_device_temp_summary">Hiển thị nhiệt độ thiết bị (pin)</string>
+
+    <string name="game_overlay_cpu_usage_title">Sử dụng CPU</string>
+    <string name="game_overlay_cpu_usage_summary">Hiển thị phần trăm CPU đang sử dụng</string>
+    <string name="game_overlay_cpu_clock_title">Tốc độ xung nhịp CPU</string>
+    <string name="game_overlay_cpu_clock_summary">Hiển thị tốc độ xung nhịp hiện tại của từng lõi CPU</string>
+
+    <string name="game_overlay_cpu_temp_title">Nhiệt độ CPU</string>
+    <string name="game_overlay_cpu_temp_summary">Hiển thị nhiệt độ CPU (thermal_zone0)</string>
+
+    <string name="game_overlay_ram_usage_title">Sử dụng RAM</string>
+    <string name="game_overlay_ram_usage_summary">Hiển thị mức sử dụng RAM hiện tại theo MB</string>
+
+    <string name="game_overlay_gpu_usage_title">Sử dụng GPU</string>
+    <string name="game_overlay_gpu_usage_summary">Hiển thị phần trăm GPU đang sử dụng</string>
+
+    <string name="game_overlay_gpu_clock_title">Xung nhịp GPU</string>
+    <string name="game_overlay_gpu_clock_summary">Hiển thị tần số xung nhịp hiện tại của GPU</string>
+
+    <string name="game_overlay_gpu_temp_title">Nhiệt độ GPU</string>
+    <string name="game_overlay_gpu_temp_summary">Hiển thị nhiệt độ hiện tại của GPU</string>
+
+    <string name="game_overlay_customization_title">Tuỳ chỉnh</string>
+    <string name="game_overlay_text_size_title">Kích thước chữ</string>
+    <string name="game_overlay_text_size_summary">Điều chỉnh kích thước chữ của lớp phủ</string>
+
+    <string name="game_overlay_background_alpha_title">Độ trong suốt nền</string>
+    <string name="game_overlay_background_alpha_summary">Điều chỉnh độ trong suốt của nền lớp phủ</string>
+
+    <string name="game_overlay_corner_radius_title">Bo góc lớp phủ</string>
+    <string name="game_overlay_corner_radius_summary">Điều chỉnh độ bo góc của lớp phủ</string>
+
+    <string name="game_overlay_padding_title">Lề lớp phủ</string>
+    <string name="game_overlay_padding_summary">Điều chỉnh khoảng cách xung quanh thông tin</string>
+
+    <string name="game_overlay_item_spacing_title">Khoảng cách giữa các mục</string>
+    <string name="game_overlay_item_spacing_summary">Điều chỉnh khoảng cách giữa các dòng trong lớp phủ</string>
+
+    <string name="game_overlay_update_interval_title">Chu kỳ cập nhật</string>
+    <string name="game_overlay_update_interval_summary">Thiết lập tần suất cập nhật giá trị của lớp phủ</string>
+
+    <string name="game_overlay_title_color_title">Màu tiêu đề</string>
+    <string name="game_overlay_title_color_summary">Màu cho văn bản tiêu đề như FPS, Nhiệt độ, CPU, v.v.</string>
+
+    <string name="game_overlay_value_color_title">Màu giá trị</string>
+    <string name="game_overlay_value_color_summary">Màu cho các số liệu (ví dụ: 29, 32.0°C)</string>
+
+    <string name="game_overlay_position_title">Vị trí lớp phủ</string>
+    <string name="game_overlay_position_summary">Chọn vị trí hiển thị lớp phủ trên màn hình</string>
+
+    <string name="game_overlay_format_title">Định dạng lớp phủ</string>
+    <string name="game_overlay_format_summary">Chọn giữa chế độ đầy đủ hoặc tối giản</string>
+
+    <string name="game_overlay_split_config_title">Cấu hình chia lớp phủ</string>
+    <string name="game_overlay_split_mode_title">Chế độ chia</string>
+    <string name="game_overlay_split_mode_summary">Chọn hiển thị cạnh nhau hoặc xếp chồng</string>
+
+    <string name="game_overlay_gesture_controls_title">Cử chỉ điều khiển lớp phủ</string>
+    <string name="game_overlay_single_tap_toggle_title">Bật chạm một lần để chuyển đổi</string>
+    <string name="game_overlay_single_tap_toggle_summary">Chạm một lần để chuyển giữa lớp phủ đầy đủ và tối giản</string>
+
+    <string name="game_overlay_double_tap_capture_title">Bật chạm hai lần để ghi log</string>
+    <string name="game_overlay_double_tap_capture_summary">Chạm hai lần vào lớp phủ để bắt đầu/dừng ghi log</string>
+
+    <string name="game_overlay_long_press_enable_title">Bật nhấn giữ</string>
+    <string name="game_overlay_long_press_enable_summary">Nhấn giữ lớp phủ để truy cập cài đặt GameBar</string>
+
+    <string name="game_overlay_long_press_timeout_title">Thời gian nhấn giữ</string>
+    <string name="game_overlay_long_press_timeout_summary">Thiết lập thời gian cần thiết để kích hoạt nhấn giữ</string>
+
+    <string name="game_overlay_capture_title">Ghi log</string>
+    <string name="game_overlay_capture_start_title">Bắt đầu ghi</string>
+    <string name="game_overlay_capture_start_summary">Bắt đầu ghi lại FPS và dữ liệu hiệu năng theo thời gian thực</string>
+
+    <string name="game_overlay_capture_stop_title">Dừng ghi</string>
+    <string name="game_overlay_capture_stop_summary">Dừng ghi lại FPS và dữ liệu hiệu năng theo thời gian thực</string>
+
+    <string name="game_overlay_capture_export_title">Xuất dữ liệu log GameBar</string>
+    <string name="game_overlay_capture_export_summary">Lưu dữ liệu FPS và hiệu năng đã ghi dưới dạng tệp CSV</string>
 </resources>
