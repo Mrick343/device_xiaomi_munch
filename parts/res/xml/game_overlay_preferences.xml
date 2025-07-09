@@ -17,19 +17,19 @@
             android:key="game_overlay_fps_enable"
             android:title="@string/game_overlay_fps_title"
             android:summary="@string/game_overlay_fps_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <SwitchPreferenceCompat
             android:key="game_overlay_temp_enable"
             android:title="@string/game_overlay_device_temp_title"
             android:summary="@string/game_overlay_device_temp_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <SwitchPreferenceCompat
             android:key="game_overlay_cpu_usage_enable"
             android:title="@string/game_overlay_cpu_usage_title"
             android:summary="@string/game_overlay_cpu_usage_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <SwitchPreferenceCompat
             android:key="game_overlay_cpu_clock_enable"
