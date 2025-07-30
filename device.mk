@@ -291,6 +291,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_c2.xml:vendor/etc/media_codecs_performance_c2.xml
 endif
 
+$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
 
 # NFC
 PRODUCT_PACKAGES += \
