@@ -39,6 +39,3 @@ ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=1000
 ro.surface_flinger.set_touch_timer_ms=1000
 
-# Fingerprint
-persist.vendor.fingerprint.sensor_location=1080|965|115|local:4630946736638489729
-persist.vendor.fingerprint.type=side
