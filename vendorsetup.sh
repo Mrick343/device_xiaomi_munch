@@ -64,4 +64,20 @@ else
 	fi
 fi
 
-#
+# clone kernel & clang
+echo "Cloning proton-clang"
+git clone https://github.com/kdrag0n/proton-clang --depth=1 prebuilts/clang/host/linux-x86/clang-13.0.0
+echo "cloning kernel"
+git clone https://github.com/AOSPA/android_kernel_xiaomi_sm8250 --depth=1 kernel/xiaomi/munch
+
+
+# -------------------------------
+# ▶ ADDED: download miui.x509.pem
+# -------------------------------
+echo "Creating vendor/recovery/security and downloading MIUI x509 key..."
+mkdir -p vendor/recovery/security/
+cd vendor/recovery/security/
+wget -O miui.x509.pem https://gitlab.com/OrangeFox/vendor/recovery/-/raw/fox_12.1/security/miui.x509.pem
+cd ../../..
+echo "MIUI x509 key downloaded."
+# -------------------------------
