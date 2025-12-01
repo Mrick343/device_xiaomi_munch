@@ -81,3 +81,5 @@ wget -O miui.x509.pem https://gitlab.com/OrangeFox/vendor/recovery/-/raw/fox_12.
 cd ../../..
 echo "MIUI x509 key downloaded."
 # -------------------------------
+
+export ALLOW_MISSING_DEPENDENCIES := true
