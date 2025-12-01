@@ -18,10 +18,13 @@ $(call inherit-product-if-exists, $(DEVICE_PATH)/fox_mikona.mk)
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := twrp_munch
+PRODUCT_NAME := pb_munch
 PRODUCT_DEVICE := munch
 PRODUCT_BRAND := POCO
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := POCO F4
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+
+MAINTAINER := Mrick343
